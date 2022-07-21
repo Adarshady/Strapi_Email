@@ -19,6 +19,12 @@
     },
     "password": {
       "type": "password"
+    },
+    "orders_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "user_id"
     }
   }
 }
